@@ -1,0 +1,105 @@
+/* 🌌 Background (matches signup but without stars) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+}
+
+/* 📋 Login Card */
+.login-card {
+  width: 380px;
+  padding: 40px 35px;
+  background: #101010;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(30, 144, 255, 0.25);
+  animation: slideIn 0.8s ease;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1e90ff;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* 🏷 Form Fields */
+.form-group {
+  margin-bottom: 18px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #2c2c2c;
+  border-radius: 10px;
+  background: #0a0a0a;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form-input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 8px #1e90ff;
+  background: #151515;
+}
+
+/* 🔘 Login Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #1e90ff, #0072ff);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.login-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.7);
+}
+
+/* 📎 Bottom Text */
+.register-text {
+  margin-top: 18px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #aaa;
+}
+.register-link {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1e90ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.register-link:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+/* 🎬 Animation */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
